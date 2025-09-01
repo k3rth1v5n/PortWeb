@@ -34,7 +34,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Build with Jekyll (Gemfile version)
-        run: bundle exec jekyll build --source ./ --destination ./_site
+        run: bundle exec jekyll build --source ./docs --destination ./_site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
